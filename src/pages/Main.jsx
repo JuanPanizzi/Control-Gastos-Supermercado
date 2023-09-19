@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { Header } from '../componentes/Header'
 import { Products } from '../componentes/Products'
 import { useCart} from '../hooks/useCart'
@@ -6,8 +6,9 @@ import { AddProduct } from '../componentes/AddProduct'
 import { Button, ButtonGroup } from '@chakra-ui/react'
 export const Main = () => {
 
-  const { products, newProduct, addProduct, removeProduct, handleChange, handleCantidad, handlePrice} = useCart()
+  const { products, newProduct, addProduct, removeProduct, handleChange, handleCantidad, handlePrice, handleTotal} = useCart()
 
+  const total = useMemo(()=> handleTotal(), [products])
 
   return (
     <>
@@ -39,8 +40,8 @@ export const Main = () => {
                 {/* <!-- Numeric Textfield with Floating Label --> */}
 
                 
-
             </div>
+                <h1>El total es: {total}</h1>
     </>
   )
 }

@@ -47,6 +47,10 @@ export function useCart() {
         newPrice[index].totalPorProducto =  newPrice[index].cantidad * precioInput 
         setProducts(newPrice) 
     }
+    const handleTotal = () =>{
+        return products.reduce((acum, {totalPorProducto})=> totalPorProducto += acum, 0)
+    }
+
 
     return {
         products,
@@ -56,5 +60,6 @@ export function useCart() {
         handleChange,
         handleCantidad,
         handlePrice,
+        handleTotal
     }
 }
