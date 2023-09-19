@@ -1,0 +1,11 @@
+
+
+.ctn-add-product form {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.input-button{
+    display: flex;
+    align-items: center;
+}

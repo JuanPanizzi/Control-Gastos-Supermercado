@@ -1,0 +1,23 @@
+.product{
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%); 
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.product div {
+    text-align: center;
+}
+.ctn-products{
+    width: 80%;
+    max-height: 300px;
+    margin: auto;
+    padding: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.input-cantidad, .input-precio{
+    width: 80%;
+}
