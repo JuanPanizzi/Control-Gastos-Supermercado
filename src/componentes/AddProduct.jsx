@@ -8,12 +8,13 @@ export const AddProduct = ({ addProduct, handleChange, newProduct}) => {
 
 
     return (
-        <form action="#" onSubmit={(e)=> addProduct(e)}>
 
-        <FormControl w="50%" mt={10} >
-            <FormLabel >Ingrese un producto</FormLabel>
+
+        <FormControl py={4} my={5}   >
+        <form action="#" onSubmit={(e)=> addProduct(e)} className='form-control-child'>
+            <FormLabel textAlign="center" fontWeight="bold" >Ingrese un producto</FormLabel>
             <div className='input-button'>
-            <Input type='text' w="50%" borderEndRadius="0" value={newProduct} onChange={(e)=> handleChange(e)} 
+            <Input type='text'  w={["80%","60%", "40%" ]} fontSize={["0.8rem", "1rem"]} borderEndRadius="0" value={newProduct} onChange={(e)=> handleChange(e)} 
             />
             <Button colorScheme='teal' variant='solid' type='submit' borderStartRadius="0">
                 <span class="material-icons material-symbols-outlined">
@@ -23,8 +24,8 @@ export const AddProduct = ({ addProduct, handleChange, newProduct}) => {
             </div>
 
             {/* <FormHelperText>We'll never share your email.</FormHelperText> */}
-        </FormControl>
         </form>
+        </FormControl>
 
     )
 }

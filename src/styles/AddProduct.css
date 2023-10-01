@@ -1,11 +1,10 @@
 
-
-.ctn-add-product form {
-    display: flex;
-    width: 50%;
+.form-control-child{
+    width: 100%;
     margin: auto;
 }
 .input-button{
     display: flex;
+    justify-content: center;
     align-items: center;
 }

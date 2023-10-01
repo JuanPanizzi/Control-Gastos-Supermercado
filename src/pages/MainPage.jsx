@@ -1,26 +1,28 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useState } from 'react'
 import { Header } from '../componentes/Header'
 import { Products } from '../componentes/Products'
 import { useCart} from '../hooks/useCart'
 import { AddProduct } from '../componentes/AddProduct'
 import { Button, ButtonGroup } from '@chakra-ui/react'
-export const Main = () => {
+import { TableProduct } from '../componentes/TableProduct'
+import '../styles/MainPage.css'
 
+
+
+export const MainPage = () => {
+  
   const { products, newProduct, addProduct, removeProduct, handleChange, handleCantidad, handlePrice, handleTotal} = useCart()
-
   const total = useMemo(()=> handleTotal(), [products])
+
 
   return (
     <>
     <Header/>
 
-    {/* Ingresar Ptoducto */}
-    <div>
     <AddProduct addProduct={addProduct} 
             handleChange={handleChange}
-            newProduct={newProduct} 
-             />
-    </div>
+            newProduct={newProduct}
+/>
 
     <div className='ctn-products'>
                 {products.map(({ nombre, cantidad, precio, totalPorProducto }, index) => (
@@ -37,11 +39,12 @@ export const Main = () => {
                 )
                 )
                 }
-                {/* <!-- Numeric Textfield with Floating Label --> */}
 
-                
             </div>
-                <h1>El total es: {total}</h1>
+                <div className='total'>
+                <h3>TOTAL: $ {total}</h3>
+                  </div>                
+              
     </>
   )
 }

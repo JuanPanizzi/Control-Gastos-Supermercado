@@ -1,5 +1,19 @@
+
 header{
-    background-color: #4CAF50;
-    color: #757575;
     text-align: center;
-}
+    background-color: teal;
+    color: white;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    }
+
+    @media (max-width: 576px) {
+        header{
+    font-size: 0.9rem;
+        }
+    }

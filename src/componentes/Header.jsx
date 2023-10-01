@@ -5,7 +5,7 @@ export const Header = () => {
     <>
    <header>
     <h1>
-        Supermarket Calculator 
+       CALCULADORA PARA GASTOS DEL SUPER 
     </h1>
         
    </header>

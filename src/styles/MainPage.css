@@ -1,0 +1,19 @@
+.total{
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.total h3{
+    background-color: teal;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    border-radius: 10px;
+}

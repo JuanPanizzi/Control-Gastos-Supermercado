@@ -13,7 +13,7 @@ export function useCart() {
         if (newProduct.length !== 0 && !products.some((elem)=> elem.nombre === newProduct)) {
             setProducts(prevState => (
                 [...prevState,
-                { nombre: newProduct, cantidad: 1, precio: 0, totalPorProducto: 0 }]
+                { nombre: newProduct, cantidad: null, precio: 0, totalPorProducto: 0 }]
             ))
         } else if(!products.some((elem)=> elem.nombre === newProduct)){
             alert('Tienes que elegir un producto')

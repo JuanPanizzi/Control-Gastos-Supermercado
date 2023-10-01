@@ -1,23 +1,48 @@
 .product{
     display: grid;
-    grid-template-columns: repeat(6, 16.66%); 
-    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    gap: 5px;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100%;
     text-align: center;
+    padding: 0 5px;
+    margin-top: 8px;
 }
 .product div {
     text-align: center;
 }
 .ctn-products{
-    width: 80%;
+    width: 100%;
     max-height: 300px;
     margin: auto;
-    padding: 15px;
-    overflow-y: scroll;
+    /* padding: 15px; */
+    overflow-y: auto;
     overflow-x: hidden;
 }
-.input-cantidad, .input-precio{
+/* .input-cantidad, .input-precio{
     width: 80%;
 }
+.input-precio{
+    margin: 5px 0;
+} */
+.icono-carrito{
+    font-size: 1rem;
+}
+.nombre-producto{
+    font-size: 0.5rem;
+}
+@media (min-width: 480px) {
+    .ctn-products{
+    width: 90%;
+    }
+    .nombre-producto{
+        font-size: 0.8rem;
+    }
+    
+}
+@media (min-width: 768px) {
+    .ctn-products{
+    width: 70%;
+    }}
