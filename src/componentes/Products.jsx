@@ -29,7 +29,7 @@ export const Products = ({ nombre, cantidad, precio, totalPorProducto, index, re
               <Input  
                placeholder='Cantidad' type='number'  value={cantidad} onChange={(e) => handleCantidad(e, index)} 
               onSubmit={(e)=>e.preventDefault} fontSize={["0.6rem", "0.8rem"]}
-              textAlign="center" px="1px"/>
+              textAlign="center" px="1px" fontWeight={600}/>
             </InputGroup>
           </Stack>  
         
@@ -51,11 +51,6 @@ export const Products = ({ nombre, cantidad, precio, totalPorProducto, index, re
           <Stack>
             <InputGroup  size={["xs","sm", "md"]} >
               <InputLeftElement 
-                // display="flex"
-                // justifyContent="start"
-                // ml={3}
-                // mr={0}
-                // pr={0}
                 pointerEvents='none'
                 color='teal'
                 fontSize={["0.6rem", "0.8rem"]}
@@ -64,7 +59,7 @@ export const Products = ({ nombre, cantidad, precio, totalPorProducto, index, re
               />
               <Input placeholder='0.00'  value={precio} onChange={(e) => handlePrice(e, index)}
                 fontSize={["0.6rem", "0.8rem"]}
-                type='number'  onSubmit={(e)=>e.preventDefault} px="1px"  textAlign="center"
+                type='number'  onSubmit={(e)=>e.preventDefault} px="1px"  textAlign="center" fontWeight={600}
                 />
 
             </InputGroup>
