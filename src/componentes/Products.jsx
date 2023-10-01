@@ -64,11 +64,7 @@ export const Products = ({ nombre, cantidad, precio, totalPorProducto, index, re
 
             </InputGroup>
           </Stack>
-          {/* <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input className="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4" value={precio} onChange={(e) => handlePrice(e, index)} />
-            <label className="mdl-textfield__label" htmlFor="sample4">Precio $</label>
-            <span className="mdl-textfield__error">¡Elige un número!</span>
-          </div> */}
+          
 
         </form>
 </div>

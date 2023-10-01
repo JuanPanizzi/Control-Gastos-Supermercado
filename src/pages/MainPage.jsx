@@ -4,7 +4,6 @@ import { Products } from '../componentes/Products'
 import { useCart} from '../hooks/useCart'
 import { AddProduct } from '../componentes/AddProduct'
 import { Button, ButtonGroup } from '@chakra-ui/react'
-import { TableProduct } from '../componentes/TableProduct'
 import '../styles/MainPage.css'
 
 
