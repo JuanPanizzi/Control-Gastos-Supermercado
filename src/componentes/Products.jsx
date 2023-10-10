@@ -24,11 +24,11 @@ export const Products = ({ nombre, cantidad, precio, totalPorProducto, index, re
         <form action="#" className='input-cantidad' >
           
         <Stack >
-            <InputGroup size={["xs","sm", "md"]}>
+            <InputGroup size={["sm", "md"]}>
               
               <Input  
                placeholder='Cantidad' type='number'  value={cantidad} onChange={(e) => handleCantidad(e, index)} 
-              onSubmit={(e)=>e.preventDefault} fontSize={["0.6rem", "0.8rem"]}
+              onSubmit={(e)=>e.preventDefault()} fontSize={["0.7rem", "0.8rem"]}
               textAlign="center" px="1px" fontWeight={600}/>
             </InputGroup>
           </Stack>  
@@ -49,7 +49,7 @@ export const Products = ({ nombre, cantidad, precio, totalPorProducto, index, re
         <form action="#" className='input-precio'>
 
           <Stack>
-            <InputGroup  size={["xs","sm", "md"]} >
+            <InputGroup  size={["sm", "md"]} >
               <InputLeftElement 
                 pointerEvents='none'
                 color='teal'
@@ -58,8 +58,8 @@ export const Products = ({ nombre, cantidad, precio, totalPorProducto, index, re
                
               />
               <Input placeholder='0.00'  value={precio} onChange={(e) => handlePrice(e, index)}
-                fontSize={["0.6rem", "0.8rem"]}
-                type='number'  onSubmit={(e)=>e.preventDefault} px="1px"  textAlign="center" fontWeight={600}
+                fontSize={["0.7rem", "0.8rem"]}
+                type='number'  onSubmit={(e)=>e.preventDefault()} px="1px"  textAlign="center" fontWeight={600}
                 />
 
             </InputGroup>
