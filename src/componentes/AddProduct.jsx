@@ -1,7 +1,6 @@
 import { Button, FormControl, FormLabel, Input } from '@chakra-ui/react'
 import '../styles/AddProduct.css'
 
-
 //export const AddProduct = ({ addProduct, handleChange, newProduct }) => {
 
 export const AddProduct = ({ addProduct, handleChange, newProduct}) => {
@@ -22,7 +21,6 @@ export const AddProduct = ({ addProduct, handleChange, newProduct}) => {
                 </span>
             </Button>
             </div>
-
             {/* <FormHelperText>We'll never share your email.</FormHelperText> */}
         </form>
         </FormControl>
